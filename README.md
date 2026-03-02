@@ -279,17 +279,17 @@ Produces something like:
   Up  :
 
 [2]
-  Tap : <ctrl>c<ctrl>
+  Tap : <ctrl>c<-ctrl>
   Down:
   Up  :
 
 [3]
-  Tap : <ctrl>v<ctrl>
+  Tap : <ctrl>v<-ctrl>
   Down:
   Up  :
 
 [4]
-  Tap : <ctrl>a<ctrl>
+  Tap : <ctrl>a<-ctrl>
   Down:
   Up  :
 
