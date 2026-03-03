@@ -17,6 +17,8 @@ For command-level details, refer to the **[Macropad Command Set](https://github.
 
 ## **Combination Guide**
 
+<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/screendget-combi.png?raw=true" alt="screendget38 macropad combination" width="50%" height="50%">
+
 ### **Modular Expansion Architecture**
 
 Your macropad units—and the optional media controller—are designed to operate in a **left-to-right daisy chain**
@@ -33,7 +35,7 @@ Your macropad units—and the optional media controller—are designed to operat
 Each unit must be configured individually. Configure them **one at a time** over USB to avoid addressing conflicts.
 
  1. Connect the unit directly via USB-C.
- 2.  Open the CLI (or your WebSerial configurator).
+ 2.  Open the [CLI](https://www.retropy.io/screendget/cli/) (or your WebSerial configurator).
  3.  Enter:
     -   `setmaster` — assigns the device as **Master**
     -   `setnode` — assigns the device as **Node**
@@ -42,6 +44,7 @@ Each unit must be configured individually. Configure them **one at a time** over
 
 ### **Example Configuration**
 
+
 Suppose you have
  - 1 × Macropad
  - 1 × Media Controller    
@@ -49,12 +52,23 @@ Suppose you have
 
 Your physical order and role assignment might look like:
 
-[Master: Media Controller] → [Node: Macropad] → [Node: Macropad]
+**[Master: Media Controller] → [Node: Macropad] → [Node: Macropad]**
+| CONFIG 1| MASTER                              | NODE|
+|---------------|--------------------------------------------|---------|
+| | <div align="center"><img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/usb-c.png?raw=true" alt="usb-c connection" width="30%" height="auto"></div>
+ |     | <div align="center"><img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/screendget-media-controller.png?raw=true" alt="media controller" width="70%" height="auto"></div> |<div align="center"><img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/screendget-macropad.png?raw=true" alt="macropad" width="70%" height="auto"></div> 
+| | Assign media controller as master using `setmaster`  | Assign macropad as node using `setnode`|
+
+
 
 Or, if you prefer the macropad as the primary controller:
 
-[Master: Macropad] → [Node: Media Controller] → [Node: Macropad]
-
+**[Master: Macropad] → [Node: Media Controller] → [Node: Macropad]**
+| CONFIG 2| MASTER                              | NODE|
+|---------------|--------------------------------------------|---------|
+| | <div align="center"><img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/usb-c.png?raw=true" alt="usb-c connection" width="30%" height="auto"></div>
+ |     |<div align="center"><img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/screendget-macropad.png?raw=true" alt="usb-c connection" width="70%" height="auto"></div> | <div align="center"><img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/screendget-media-controller.png?raw=true" alt="usb-c connection" width="70%" height="auto"></div>
+| | Assign macropad as master using `setmaster`  | Assign media controller as node using `setnode`|
 All devices will automatically communicate via the chain after their roles are set.
 
 ----------
@@ -83,4 +97,3 @@ Set the LED to purple:
 Turn off the LED:
 
     rgb 0 0 0
-
