@@ -2,7 +2,10 @@
 
 This guide explains how to use the macro system built into your macropad.  
 A *macro* is a stored script that can type text, press keys, hold modifiers, and insert delays.
-You can create, edit, and run these macros through the command-line interface (CLI).
+
+<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/screendget-cli.png?raw=true" alt="screendget CLI" width="30%" height="30%">
+
+You can create, edit, and run these macros through the [command-line interface (CLI)](https://www.retropy.io/screendget/cli/).
 
 <img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/screendget-combi.png?raw=true" alt="screendget38 macropad combination" width="50%" height="50%">
 
@@ -357,8 +360,7 @@ macro 2 <win><-win><delay:150>notepad<enter>
 Open Chrome → YouTube:
 
 ```
-macro 3 <win><-win><delay:100>chrome<enter>
-<delay:300>youtube.com<enter>
+macro 3 <win><-win><delay:100>chrome<enter><delay:300>youtube.com<enter>
 ```
 
 ## 6) Use Down/Up for one-shot actions
