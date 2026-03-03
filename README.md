@@ -33,6 +33,7 @@ Your macropad provides **6 macro slots**, indexed:
 0, 1, 2, 3, 4, 5
 ```
 The slot index follows the following key positions on your macropad:
+
 <img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/macropad_index.png?raw=true" alt="macropad index reference" width="30%" height=auto>
 
 Each slot can hold up to **three** scripts:
