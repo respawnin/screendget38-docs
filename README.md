@@ -3,7 +3,7 @@
 This guide explains how to use the macro system built into your macropad.  
 A *macro* is a stored script that can type text, press keys, hold modifiers, and insert delays.
 
-<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/screendget-cli.png?raw=true" alt="screendget CLI" width="30%" height="30%">
+<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/screendget-cli.png?raw=true" alt="screendget CLI" width="50%" height="50%">
 
 You can create, edit, and run these macros through the [command-line interface (CLI)](https://www.retropy.io/screendget/cli/).
 
