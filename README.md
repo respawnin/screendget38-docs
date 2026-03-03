@@ -1,4 +1,3 @@
-
 # Screendget Macropad User Guide (CLI + HID Key Macros)
 
 This guide explains how to use the macro system built into your macropad.  
@@ -19,12 +18,11 @@ For hardware / combination specific documentations (eg. Setting as master/node, 
 6. [Explicit Key Actions](#6-explicit-key-actions)
 7. [Delays](#7-delays)
 8. [Newline and Whitespace Rules](#8-newline-and-whitespace-rules)
-9. [Practical Examples](#9-practical-examples)
-10. [Recommended Usage Pattern](#10-recommended-usage-pattern)
-11. [Troubleshooting](#11-troubleshooting)
-12. [Example Macros (Explained)](#12-example-macros-explained)
-13. [Macro Cheat Sheet](#13-macro-cheat-sheet)
-14. [Step-by-Step Tutorial](#14-step-by-step-tutorial)
+9. [Recommended Usage Pattern](#9-recommended-usage-pattern)
+10. [Troubleshooting](#10-troubleshooting)
+11. [Example Macros (Explained)](#11-example-macros-explained)
+12. [Macro Cheat Sheet](#12-macro-cheat-sheet)
+13. [Step-by-Step Tutorial](#13-step-by-step-tutorial)
 
 ---
 
@@ -35,7 +33,7 @@ Your macropad provides **6 macro slots**, indexed:
 0, 1, 2, 3, 4, 5
 ```
 The slot index follows the following key positions on your macropad:
-<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/macropad_index.png?raw=true" alt="macropad index reference" width="50%" height="50%">
+<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/macropad_index.png?raw=true" alt="macropad index reference" width="30%" height=auto>
 
 Each slot can hold up to **three** scripts:
 
@@ -208,30 +206,7 @@ Useful for UI automation (apps, menus, browser navigation).
 
 ----------
 
-# 9) Practical Examples
-
-### Type “help” and Enter
-
-```
-help<enter>
-```
-
-### Ctrl+V
-
-```
-<ctrl>v<-ctrl>
-```
-
-### Launch Edge and open Gmail
-
-```
-<win><-win><delay:50>edge<delay:150><enter><delay:150>www.gmail.com<delay:150><enter>
-
-```
-
-----------
-
-# 10) Recommended Usage Pattern
+# 9) Recommended Usage Pattern
 
 To prevent double-triggering:
 
@@ -242,7 +217,7 @@ macroU 0 none
 
 ----------
 
-# 11) Troubleshooting
+# 10) Troubleshooting
 
 **Characters missing?**  
 Add:
@@ -261,63 +236,12 @@ Ensure your macro releases it explicitly.
 
 ----------
 
-# 12) Example Macros (Explained)
+# 11) Example Macros (Explained)
 
-Running:
-
-```text
-macro?
-```
-
-Produces something like:
-
-```text
-[0]
-  Tap : hello
-  Down:
-  Up  :
-
-[1]
-  Tap : help <enter>
-  Down:
-  Up  :
-
-[2]
-  Tap : <ctrl>c<ctrl>
-  Down:
-  Up  :
-
-[3]
-  Tap : <ctrl>v<ctrl>
-  Down:
-  Up  :
-
-[4]
-  Tap : <ctrl>a<ctrl>
-  Down:
-  Up  :
-
-[5]
-  Tap : <win><-win> <delay:50>edge<delay:150><enter><delay:150>www.gmail.com<delay:150><enter>
-  Down:
-  Up  :
-
-```
-
-### How to read it
-
--   Each `[n]` is a macro slot
-    
--   **Tap** runs on a normal press
-    
--   **Down** runs on key-down
-    
--   **Up** runs on key-up
-    
 
 ### Slot examples:
 
-<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/macropad_index.png?raw=true" alt="macropad index reference" width="50%" height="50%">
+<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/macropad_index.png?raw=true" alt="macropad index reference" width="30%" height=auto>
 
 **Slot 0 – Types “hello”**
 
@@ -340,9 +264,7 @@ macro 2 <ctrl>c<-ctrl>
 **Slot 5 – Full workflow: open Edge, load Gmail**
 
 ```
-<win><-win><delay:50>edge<delay:150><enter>
-<delay:150>www.gmail.com<delay:150><enter>
-
+<win><-win><delay:50>edge<delay:150><enter><delay:150>www.gmail.com<delay:150><enter>
 ```
 
 Users can modify any slot by running:
@@ -353,7 +275,7 @@ macro <slot> <script>
 
 ----------
 
-# 13) Macro Cheat Sheet
+# 12) Macro Cheat Sheet
 
 ### Slot Management
 
@@ -399,7 +321,7 @@ macro <slot> none
 
 ----------
 
-# 14) Step-by-Step Tutorial
+# 13) Step-by-Step Tutorial
 ** Write Your First Macro**
 
 ## 1) Check existing macros
