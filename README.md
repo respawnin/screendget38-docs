@@ -5,10 +5,12 @@ This guide explains how to use the macro system built into your macropad.
 A *macro* is a stored script that can type text, press keys, hold modifiers, and insert delays.
 You can create, edit, and run these macros through the command-line interface (CLI).
 
+<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/screendget-combi.png?raw=true" alt="screendget38 macropad combination" width="50%" height="50%">
 
+
+For hardware / combination specific documentations (eg. Setting as master/node, or adjusting RGB LED colours, refer to the [hardware guide here](https://github.com/respawnin/screendget38-docs/blob/main/MacroPad-Hardware-Guide.md).
 
 # **Contents**
-
 1. [Macro Slots](#1-macro-slots)
 2. [CLI Commands](#2-cli-commands)
 3. [Macro Language Overview](#3-macro-language-overview)
@@ -32,6 +34,8 @@ Your macropad provides **6 macro slots**, indexed:
 ```
 0, 1, 2, 3, 4, 5
 ```
+The slot index follows the following key positions on your macropad:
+<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/macropad_index.png?raw=true" alt="macropad index reference" width="50%" height="50%">
 
 Each slot can hold up to **three** scripts:
 
@@ -279,17 +283,17 @@ Produces something like:
   Up  :
 
 [2]
-  Tap : <ctrl>c<-ctrl>
+  Tap : <ctrl>c<ctrl>
   Down:
   Up  :
 
 [3]
-  Tap : <ctrl>v<-ctrl>
+  Tap : <ctrl>v<ctrl>
   Down:
   Up  :
 
 [4]
-  Tap : <ctrl>a<-ctrl>
+  Tap : <ctrl>a<ctrl>
   Down:
   Up  :
 
@@ -311,7 +315,9 @@ Produces something like:
 -   **Up** runs on key-up
     
 
-#### Slot examples:
+### Slot examples:
+
+<img src="https://github.com/respawnin/screendget38-docs/blob/main/imgs/macropad_index.png?raw=true" alt="macropad index reference" width="50%" height="50%">
 
 **Slot 0 – Types “hello”**
 
